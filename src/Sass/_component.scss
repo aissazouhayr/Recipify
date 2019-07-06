@@ -1,0 +1,26 @@
+// Headers
+
+.header-primary{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    color:rgb(4, 58, 4);
+   // text-transform: uppercase;
+     text-align: center;
+    
+
+}
+
+// Buttonns
+.btn{
+     width: 15rem;
+     height: 5rem;
+     border-radius: 8rem;
+     font-size: 1.7rem;
+     text-transform: uppercase;
+     
+     &:focus{
+         outline: none;
+     }
+   
+}

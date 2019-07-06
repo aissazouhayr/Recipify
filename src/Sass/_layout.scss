@@ -1,0 +1,53 @@
+.section-header{
+    width:100vw;
+    height:6rem;
+   //background-image: linear-gradient(to bottom,rgba(16, 165, 41, 0.2),rgba(11, 168, 95, 0.9));
+
+
+
+}
+.container{
+  width:100vw;
+  height:100vh ;
+
+
+}
+.search-section{
+  width:100vw;
+  height:7rem;
+  
+ background-color: rgb(225, 236, 225);
+ padding:5rem 10rem;
+ display:flex;
+ justify-content: space-around;
+
+
+}
+.content{
+  width:90vw;
+  height:100vh ;
+  margin: 0 auto;
+ //background-color: yellow;  
+ display:grid;
+ grid-template-columns:  minmax(30rem,min-content) 1fr minmax(30rem,min-content) ;
+ 
+ 
+}
+
+.results{
+ // height:100vh;
+   padding:1rem 0;
+   background-color:rgb(209, 219, 205);
+  
+  
+}
+.description{
+  height:100vh;
+ // background-color: plum;
+ //background-color:rgb(147, 189, 132);
+
+}
+.likes{
+  height:100vh;
+  //background-color: orange;
+}
