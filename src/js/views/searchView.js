@@ -3,6 +3,10 @@ import { DomStrings } from '../base';
 
 
 // SEARCH VIEW 
+export const getSearchInput=()=>{
+    return DomStrings["search-form__input"].value;
+   
+}
 export const renderPagination = (page = 1, type = 'next') => {
     let markup = `
         <div class="pagination__btn" data-goto="${type == 'next' ? page + 1 : page - 1}">
