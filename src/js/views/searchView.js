@@ -55,14 +55,15 @@ export const rendeResults = (recipes, page = 1, resPerPage = 10) => {
     let end = resPerPage * page;                   //10 as start
     let pages = Math.ceil(recipes.length / resPerPage);
  
-    // render results by calling renderElements where data is prepared 
+    // clear old results and render results by calling renderElements where data is prepared 
+    clearRsult();
     recipes.slice(start, end).forEach(renderElements);
     if (page == 1 && pages == 1) {
         clearPagination();
     }
     else if (page == 1 && pages != 1) {
         renderPagination(page, 'next');
-    }
+    }  
     else if (page < pages) {
         renderPagination(page, 'prev');
         renderPagination(page, 'next');

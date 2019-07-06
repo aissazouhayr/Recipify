@@ -13,14 +13,12 @@ const state = {};
 // Search controller to fetch the recipes and renderd them on the left panel
 const SearchControll = async()=>{
    // fetch the data
-   
-  // state.search = new Search('pizza');
-  state.search = new Search(SearchView.getSearchInput());
-  //state.search = new Search(SearchView.getSearchInput());
-   await state.search.getResults();
-  // console.log("dsds"+state.search.recipes);
-   SearchView.rendeResults(state.search.recipes);
    try{
+       // state.search = new Search('pizza');
+  state.search = new Search(SearchView.getSearchInput());
+  await state.search.getResults();
+ 
+  SearchView.rendeResults(state.search.recipes);
 
    }catch(error){
        alert("error fetching data");
