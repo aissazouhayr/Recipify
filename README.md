@@ -1,3 +1,3 @@
 # Recipify
 
- https://aissazouhayr.github.io/Recipify/dist/index.html
+ https://aissazouhayr.github.io/Recipify/dist/
