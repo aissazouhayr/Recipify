@@ -35,6 +35,6 @@ const SearchControll = async()=>{
       
     });
 }
-//SearchControll ();
+SearchControll ();
 
 
