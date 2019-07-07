@@ -46,12 +46,11 @@ DomStrings["search-form__btn"].addEventListener('click',e=>{
     SearchControll ();
 } );
 // event when a recipes from the left panel is clicked
-DomStrings["results-list__item"].addEventListener('hashChange',(e)=>{
-    console.log()
-});
 
 
 
 const recipe = new Recipe(41470);
 recipe.getRecipe();
+console.log(recipe)
+
 
