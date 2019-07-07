@@ -185,6 +185,13 @@ html {
   .pagination__btn:hover .pagination__icon {
     fill: #1dd41d; }
 
+.description-figure__img {
+  width: 50%;
+  height: 50%; }
+
+.description-details {
+  background-color: cyan; }
+
 .section-header {
   width: 100vw;
   height: 6rem; }
@@ -213,7 +220,10 @@ html {
   background-color: #d1dbcd; }
 
 .description {
-  height: 100vh; }
+  height: 100vh;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around; }
 
 .likes {
   height: 100vh; }

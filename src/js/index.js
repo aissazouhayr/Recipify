@@ -50,7 +50,7 @@ DomStrings["search-form__btn"].addEventListener('click',e=>{
 
 
 const recipe = new Recipe(41470);
-recipe.getRecipe();
-console.log(recipe)
+//recipe.getRecipe();
+//console.log(recipe)
 
 

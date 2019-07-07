@@ -281,3 +281,20 @@ html{
 
 }
 
+
+
+//Serach View styles in the middle of the page
+.description-figure{
+
+    &__img{
+     width:50%;
+     height:50%;
+    }
+    &__caption{
+
+    }
+
+}
+.description-details{
+    background-color: cyan;
+}

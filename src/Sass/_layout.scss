@@ -43,11 +43,15 @@
 }
 .description{
   height:100vh;
- // background-color: plum;
- //background-color:rgb(147, 189, 132);
+  background-color: yellow;
+  display: flex;
+ justify-content: space-around;
+
+  //align-items: center;
+
 
 }
 .likes{
   height:100vh;
-  //background-color: orange;
+
 }
