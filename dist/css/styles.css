@@ -143,8 +143,7 @@ html {
   padding: 1.3rem;
   border: 0.1px solid #abceab;
   display: flex;
-  align-items: center;
-  justify-content: space-around; }
+  align-items: center; }
 
 .results-list__img {
   width: 4.5rem;
