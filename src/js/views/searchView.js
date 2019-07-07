@@ -41,9 +41,11 @@ const formatTitle = (title,limit=17)=>{
 const renderElements = (element) => {
     const title = formatTitle(element.title);
     let markup = ` 
-    <li class="results-list__item">
+    <li>
+    <a href="#${element.recipe_id}" class="results-list__item">
     <img src="${element.image_url}" alt="" class="results-list__img">
     <span class="results-list__title">${title}</span>
+    </a>
     </li>`;
     DomStrings["results-list"].insertAdjacentHTML("beforeend", markup);
 }

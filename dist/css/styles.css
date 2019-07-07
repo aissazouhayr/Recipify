@@ -142,8 +142,10 @@ html {
   background-color: rgba(177, 243, 177, 0.5);
   padding: 1.3rem;
   border: 0.1px solid #abceab;
+  text-decoration: none;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
 
 .results-list__img {
   width: 4.5rem;

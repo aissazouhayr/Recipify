@@ -219,9 +219,11 @@ html{
     background-color:rgba(177, 243, 177,.5);
     padding:1.3rem;
     border: .1px solid rgb(171, 206, 171);
+    text-decoration: none;
+    
     display:flex;
     align-items: center;
-    //justify-content: space-around;
+    justify-content: space-around;
    }
    &__img{
          width:4.5rem;

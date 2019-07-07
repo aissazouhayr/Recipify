@@ -3,6 +3,7 @@ import Search from './models/Search';
 
 import * as SearchView from './views/searchView'
 import {DomStrings} from './base';
+import Recipe  from './models/Recipe.js';
 //mport { basename } from 'path';
 
 // the state of the app that keeps track of the recipes, like and activities at  a moment
@@ -39,10 +40,18 @@ const SearchControll = async()=>{
 //SearchControll ();
 
 
-
+// event when Search for recipes is invloked
 DomStrings["search-form__btn"].addEventListener('click',e=>{
     e.preventDefault();
     SearchControll ();
-} 
-);
+} );
+// event when a recipes from the left panel is clicked
+DomStrings["results-list__item"].addEventListener('hashChange',(e)=>{
+    console.log()
+});
+
+
+
+const recipe = new Recipe(41470);
+recipe.getRecipe();
 
