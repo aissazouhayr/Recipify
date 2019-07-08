@@ -28,6 +28,7 @@
   height:100vh ;
   margin: 0 auto;
  //background-color: yellow;  
+ 
  display:grid;
  grid-template-columns:  minmax(30rem,min-content) 1fr minmax(30rem,min-content) ;
  
@@ -42,16 +43,20 @@
   
 }
 .description{
-  height:100vh;
-  background-color: yellow;
-  display: flex;
- justify-content: space-around;
+  background-image: linear-gradient(to bottom,rgb(209, 219, 205),rgb(219, 231, 219),rgb(255, 255, 255),rgb(131, 192, 131),white);
+  padding:0 2rem;
+  display: grid;
+  grid-auto-columns: minmax(min-content,90rem);
+  grid-auto-rows: minmax(40rem,min-content) minmax(20rem,min-content);
+  //grid-gap: .5rem;
+  justify-content: center;
 
-  //align-items: center;
+  align-content: center;
 
 
 }
 .likes{
-  height:100vh;
+ // height:100vh;
+ background-color: orangered;
 
 }

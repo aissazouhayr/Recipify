@@ -24,3 +24,18 @@
      }
    
 }
+
+
+
+// STARS
+.description-stars{
+    font-size: 3rem;
+    font-weight: 200;
+    &__icon{
+        width:1.8rem;
+        height:1.8rem;
+        fill:rgb(218, 201, 201);
+    }
+    
+    
+}

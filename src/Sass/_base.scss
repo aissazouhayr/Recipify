@@ -283,18 +283,80 @@ html{
 
 
 
-//Serach View styles in the middle of the page
+//Search View styles in the middle of the page
 .description-figure{
-
+    transform: skewX(-5deg);
+    background-color: rgba(184, 173, 173, 0.2);
+    border:  .1px  rgb(62, 105, 41);
+   
+    position: relative;
     &__img{
-     width:50%;
-     height:50%;
+     width:70%;
+     height:70%;
+     background-size: cover;
+     margin: 0 auto;
+  
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    //border-radius: 1rem;
+     box-shadow: 1rem 1rem 1rem white;
+     text-align: center;
+     background-position: center;
+    
+    
     }
     &__caption{
+       text-align: center;
+       font-size: 1.2rem;
+       font-weight: 300;
+       padding:2rem;
+       text-transform: uppercase;
+   
 
+       
     }
 
 }
 .description-details{
-    background-color: cyan;
+   // background-color: cyan;
+   font-size: 2rem;
+   font-weight: 200;
+   padding:1rem;
+   background-color:rgb(239, 247, 235);
+   clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+   transform: skewX(5deg);
+   
+   &__header{
+       display: flex;
+      // justify-content: c;
+       align-items: center;
+       justify-content: center;
+   }
+    &__publisher{
+       text-align: center;
+       text-decoration: none;
+        text-transform:capitalize;
+        color:rgb(187, 10, 54);
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+    &__paragraph{
+       
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        font-family: Nunito serif;
+        color:rgb(19, 19, 187);
+
+
+    }
+    &__ingredients{
+        display: flex;
+        flex-direction: column;
+        // justify-content: c;
+         align-items: center;
+         justify-content: center;
+    }
 }
