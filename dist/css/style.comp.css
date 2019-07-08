@@ -142,8 +142,10 @@ html {
   background-color: rgba(177, 243, 177, 0.5);
   padding: 1.3rem;
   border: 0.1px solid #abceab;
+  text-decoration: none;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
 
 .results-list__img {
   width: 4.5rem;
@@ -153,7 +155,8 @@ html {
 
 .results-list__title {
   font-size: 1.3rem;
-  font-weight: 300; }
+  font-weight: 300;
+  flex-flow: flex-end; }
 
 .pagination {
   width: 100%;
@@ -181,6 +184,60 @@ html {
     transform: translate(-50%, -50%); }
   .pagination__btn:hover .pagination__icon {
     fill: #1dd41d; }
+
+.description-figure {
+  transform: skewX(-5deg);
+  background-color: rgba(184, 173, 173, 0.2);
+  border: 0.1px #3e6929;
+  position: relative; }
+  .description-figure__img {
+    width: 70%;
+    height: 70%;
+    background-size: cover;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1rem 1rem 1rem white;
+    text-align: center;
+    background-position: center; }
+  .description-figure__caption {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 2rem;
+    text-transform: uppercase; }
+
+.description-details {
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 1rem;
+  background-color: #eff7eb;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: skewX(5deg); }
+  .description-details__header {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .description-details__publisher {
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #bb0a36;
+    margin-right: 2rem;
+    margin-left: 1rem; }
+  .description-details__paragraph {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-family: Nunito serif;
+    color: #1313bb; }
+  .description-details__ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
 .section-header {
   width: 100vw;
@@ -210,10 +267,16 @@ html {
   background-color: #d1dbcd; }
 
 .description {
-  height: 100vh; }
+  background-image: linear-gradient(to bottom, #d1dbcd, #dbe7db, white, #83c083, white);
+  padding: 0 2rem;
+  display: grid;
+  grid-auto-columns: minmax(min-content, 90rem);
+  grid-auto-rows: minmax(40rem, min-content) minmax(20rem, min-content);
+  justify-content: center;
+  align-content: center; }
 
 .likes {
-  height: 100vh; }
+  background-color: orangered; }
 
 .header-primary {
   font-size: 3rem;
@@ -230,3 +293,11 @@ html {
   text-transform: uppercase; }
   .btn:focus {
     outline: none; }
+
+.description-stars {
+  font-size: 3rem;
+  font-weight: 200; }
+  .description-stars__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: #dac9c9; }
