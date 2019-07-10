@@ -12,13 +12,14 @@ export const clearRecipe = ()=>{
 //function to display ingredients
 const DisplayIngredients = (ingredients)=>{
     
-    ingredients.array.forEach(element => {
+    ingredients.forEach(element => {
         const paragraph= ` <p class="description-details__paragraph"> ${element}</p>`;
         DomStrings["description-details__ingredients"].insertAdjacentHTML("beforeend",paragraph);
     });
 }
 // display the recipes results in the description area
-export const DisplayRecipe = (recipe) => {
+export const DisplayRecipe = recipe => {
+       
     const figcaption = `
      <img src="${recipe.img}" alt="recipe image"
     class="description-figure__img">
@@ -57,10 +58,10 @@ export const DisplayRecipe = (recipe) => {
       
       `;
       
-      
+     
       DomStrings["description-figure"].insertAdjacentHTML("beforeend",figcaption);
       DomStrings["description-details__header"].insertAdjacentHTML("afterbegin",link);
       
       // display ingredients
-      DisplayIngredients(recipe.ingredients)
+     DisplayIngredients(recipe.ingredients)
 }

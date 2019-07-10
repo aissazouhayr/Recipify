@@ -6,6 +6,6 @@ export const DomStrings = {
     "results-list__item":document.querySelector(".results-list__item"),
     "description-figure":document.querySelector(".description-figure"),
     "description-details__header":document.querySelector(".description-details__header"),
-
-    "description-details__ingredients":document.querySelector(".description-details__ingredients")
+    "description-details__ingredients":document.querySelector(".description-details__ingredients"),
+    "description-icons__icon--trash":document.querySelector(".description-icons__icon--trash"),
 }
