@@ -185,8 +185,25 @@ html {
   .pagination__btn:hover .pagination__icon {
     fill: #1dd41d; }
 
+.description-icons {
+  background-color: rgba(207, 191, 191, 0.438);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem; }
+  .description-icons__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: white; }
+    .description-icons__icon--trash {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: white; }
+  .description-icons__icon:hover {
+    fill: #9c320b;
+    cursor: pointer; }
+
 .description-figure {
-  transform: skewX(-5deg);
   background-color: rgba(184, 173, 173, 0.2);
   border: 0.1px #3e6929;
   position: relative; }
@@ -205,9 +222,10 @@ html {
   .description-figure__caption {
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     padding: 2rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #1313bb; }
 
 .description-details {
   font-size: 2rem;
@@ -215,7 +233,9 @@ html {
   padding: 1rem;
   background-color: #eff7eb;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  transform: skewX(5deg); }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .description-details__header {
     display: flex;
     align-items: center;
@@ -233,11 +253,25 @@ html {
     padding: 0.5rem 0;
     font-family: Nunito serif;
     color: #1313bb; }
-  .description-details__ingredients {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+
+.likes-item {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .likes-item__link {
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 3px;
+    color: black; }
+  .likes-item__trash {
+    width: 2rem;
+    height: 2rem;
+    fill: white; }
+  .likes-item__heart {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: white; }
 
 .section-header {
   width: 100vw;
@@ -271,12 +305,13 @@ html {
   padding: 0 2rem;
   display: grid;
   grid-auto-columns: minmax(min-content, 90rem);
-  grid-auto-rows: minmax(40rem, min-content) minmax(20rem, min-content);
+  grid-auto-rows: 5rem minmax(40rem, min-content) minmax(20rem, min-content);
   justify-content: center;
   align-content: center; }
 
 .likes {
-  background-color: orangered; }
+  padding: 2rem 0;
+  background-color: #d1dbcd; }
 
 .header-primary {
   font-size: 3rem;
