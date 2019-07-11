@@ -27,3 +27,7 @@ export const DisplayLikes = (title,id)=>{
    DomStrings["likes"].insertAdjacentHTML("beforeend",markup);
 
 }
+
+export const clearLike= ()=>{
+    
+}
