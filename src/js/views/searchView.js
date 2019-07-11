@@ -26,7 +26,7 @@ export const clearRsult = () => {
 }
 // function to format title to fit display area
 
-const formatTitle = (title,limit=17)=>{
+export const formatTitle = (title,limit=17)=>{
     let arr=[];
     title.split(' ').reduce((acc,cur,index)=>{   
           acc += cur.length;
@@ -51,7 +51,7 @@ const renderElements = (element) => {
 }
 
 // function to render recipes fetched from API
-export const rendeResults = (recipes, page = 1, resPerPage = 10) => {
+export const rendeResults = (recipes, page = 1, resPerPage = 8) => {
     //prepare the data for pagination
     let start = (page - 1) * resPerPage;         //0 as start
     let end = resPerPage * page;                   //10 as start

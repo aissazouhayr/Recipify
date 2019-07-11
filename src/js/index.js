@@ -4,7 +4,8 @@ import Search from './models/Search';
 import * as SearchView from './views/searchView'
 import {DomStrings} from './base';
 import Recipe  from './models/Recipe.js';
-import * as RecipeView  from './views/recipeView'
+import * as RecipeView  from './views/recipeView';
+import * as likesView from './views/likesView';
 //mport { basename } from 'path';
 
 // the state of the app that keeps track of the recipes, like and activities at  a moment
@@ -62,7 +63,11 @@ const SearchControll = async()=>{
 const likesController= ()=>{
      
 
-
+    // on the selection, get the liked recipe
+    console.log("state.recipe.title,state.recipe.id "+state.recipe.title,state.recipe.id);
+    likesView.DisplayLikes(state.recipe.title,state.recipe.id);
+      
+    // display it on the likes pnael
 
 
 }
@@ -104,7 +109,12 @@ DomStrings["search-form__btn"].addEventListener('click',e=>{
 // clear the recipe from description area when trash icon clicked
 DomStrings["description-icons__icon--trash"].addEventListener('click',RecipeView.clearRecipe);
 
+// display  a recipe title  in likes panel when heart liked
+DomStrings["description-icons__icon--like"].addEventListener('click',likesController);
+// remove  a recipe title  in likes panel when trash liked
+//DomStrings["likes-item__trash"].addEventListener('click',);
 }
 
 // intialse the app
 init();
+

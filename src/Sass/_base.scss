@@ -39,6 +39,7 @@ html{
            margin-right:3px;
           // fill:#f1e9e9;
            fill:rgb(2, 2, 37);
+           fill: rgb(9, 59, 9);
            line-height: 5;
    }
   
@@ -56,7 +57,7 @@ html{
         list-style: none; 
         text-decoration: none;
         text-transform: uppercase;
-        font-size:1.5rem ;
+        font-size:1.3rem ;
         font-family: 400;
         color:#333;
         //background-color:rgba(138, 236, 138,.2);
@@ -68,21 +69,27 @@ html{
             content: "";
             display: block;
             
-            width: 3rem;
-            height:2rem ;
+            width: 2.5rem;
+            height:1.3rem ;
             position: absolute;
             top:100%;
             left:0;
             z-index: 10;
-            clip-path: polygon(0 100%, 0 0,100% 0);
-            
+          
+           clip-path: polygon(0 100%, 0 0,100% 0);
+           //clip-path: polygon(100% 0, 100% 100%,0 100% );
 
         }
-        &:hover, &:hover::after{
+        &:hover{
            // background-color:rgba(13, 124, 32, 0.2);   
            background-color:rgba(13, 77, 23, 0.2);         
             align-items: center;
         }
+        &:hover::after{
+            // background-color:rgba(13, 124, 32, 0.2);   
+            background-color:rgb(221, 233, 223);         
+             align-items: center;
+         }
       
         
       
@@ -91,6 +98,10 @@ html{
     {
         text-decoration: none;
         color:#333;    
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        
     }
 }
 //####################################################
@@ -105,14 +116,17 @@ html{
     
     &__img{
         margin-right:3px;
-        width:5rem; 
-        height:5rem; 
+        width:3rem; 
+        height:3rem; 
         fill:rgb(19, 68, 19);
+        fill:white;
   
           
      }
      &__title{
         margin-left: 3rem;
+        color:white;
+       // background-color: white;
 
      }
      &__animated-arrow{
@@ -135,7 +149,7 @@ html{
      fill:rgb(23, 211, 23);
     }
     80%{
-        transform: scale(5) translateX(10rem);
+        transform: scale(5) translateX(5rem);
         fill:rgb(23, 211, 23);
     }
     100%{
@@ -220,7 +234,8 @@ html{
     padding:1.3rem;
     border: .1px solid rgb(171, 206, 171);
     text-decoration: none;
-    
+    list-style: none;
+    text-decoration: none;
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -286,7 +301,7 @@ html{
 //Search View styles in the middle of the page
 .description-icons{
   background-color:rgba(207, 191, 191, 0.438);
-     
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -368,10 +383,14 @@ html{
     &__publisher{
        text-align: center;
        text-decoration: none;
+       border-bottom: 1px dashed black;
         text-transform:capitalize;
         color:rgb(187, 10, 54);
         margin-right: 2rem;
         margin-left: 1rem;
+    }
+    &__publisher:hover{
+      background-color: rgb(210, 210, 224);
     }
     &__paragraph{
        
@@ -379,7 +398,7 @@ html{
         font-size: 1.5rem;
         padding: 0.5rem 0;
         font-family: Nunito serif;
-        color:rgb(19, 19, 187);
+        color:rgb(204, 132, 192);
       // align-self: start;
 
     }
@@ -390,28 +409,42 @@ html{
 }
 
 
-//LIKES ON THE LEFT SIDE
+//LIKES View  ON THE RIGHT SIDE
 .likes-item{
     display: flex;
-    justify-content: center;
-    align-content: center;
+  //  justify-content: space-evenly;
+   // align-content: center;
+   padding:0rem 4rem;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 1px;
     &__link{
-        font-size: 2rem;
-        font-weight: 300;
+        font-size: 1.8rem;
+        font-weight: 200;
         text-decoration: none;
         margin-right: 3px;
-        color:black;
-        
-        
+        color:rgb(37, 37, 235);
+        //text-transform: uppercase;
+        padding: .5rem;
+       
+      
+    }
+    &__link:hover{
+        //background-color: grey;
+    
+        border-bottom: 1px dashed rgb(245, 8, 8);
     }
     &__trash{
-        width:2rem;
-        height:2rem;
-        fill:white;
+        width:1.7rem;
+        height:1.7rem;
+       // fill:white;
+     
     }
     &__heart{
-        width:2.5rem;
-        height:2.5rem;
-        fill:white;
+        width:2rem;
+        height:2rem;
+        fill:rgba(33, 180, 33, 0.877);
+       
     }
+   
 }

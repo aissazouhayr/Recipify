@@ -8,4 +8,14 @@ export const DomStrings = {
     "description-details__header":document.querySelector(".description-details__header"),
     "description-details__ingredients":document.querySelector(".description-details__ingredients"),
     "description-icons__icon--trash":document.querySelector(".description-icons__icon--trash"),
+    "likes":document.querySelector(".likes"),
+    "description-icons__icon--trash":document.querySelector(".description-icons__icon--trash"),
+    "description-icons__icon--print":document.querySelector(".description-icons__icon--print"),
+    "description-icons__icon--like":document.querySelector(".description-icons__icon--like"),
+    "likes":document.querySelector(".likes"),
+    "likes-item__link":document.querySelector(".likes-item__link"),
+    "likes-item__trash":document.querySelector(".likes-item__trash"),
+
 }
+
+

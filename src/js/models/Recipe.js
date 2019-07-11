@@ -20,12 +20,13 @@ export default class Recipe{
             this.source= res.data.recipe.source_url;
             this.publisher = res.data.recipe.publisher;
             this.ingredients = res.data.recipe.ingredients;
-            console.log(res);
-            console.log("this.title "+this.title );
-            console.log("this.img"+ this.img);
-            console.log("this.source"+this.source);
-            console.log("this.publisher"+this.publisher);
-            console.log(" this.ingredients"+ this.ingredients);
+
+           // console.log(res);
+           // console.log("this.title "+this.title );
+           // console.log("this.img"+ this.img);
+           // console.log("this.source"+this.source);
+           // console.log("this.publisher"+this.publisher);
+           // console.log(" this.ingredients"+ this.ingredients);
 
            /* const res  = await axios(`${proxy}https://api.edamam.com/search?q=pizza&app_id=${ID}&app_key=${key2}`);
             this.recipes = res.data.hits[0];

@@ -8,16 +8,18 @@
 }
 .container{
   width:100vw;
-  height:100vh ;
+  height:50vh ;
 
 
 }
 .search-section{
   width:100vw;
-  height:7rem;
+  height:0rem;
+     
+  background-color: rgb(9, 59, 9);
   
- background-color: rgb(225, 236, 225);
- padding:5rem 10rem;
+ //background-color: rgb(225, 236, 225);
+ padding:4rem 10rem;
  display:flex;
  justify-content: space-around;
 
@@ -25,7 +27,7 @@
 }
 .content{
   width:90vw;
-  height:100vh ;
+  height:80vh ;
   margin: 0 auto;
  //background-color: yellow;  
  
@@ -47,11 +49,11 @@
   padding:0 2rem;
   display: grid;
   grid-auto-columns: minmax(min-content,90rem);
-  grid-auto-rows: 5rem minmax(40rem,min-content) minmax(20rem,min-content);
+  grid-auto-rows: 5rem minmax(40rem,min-content) minmax(20rem,min-content) min-content ;
   //grid-gap: .5rem;
   justify-content: center;
 
-  align-content: center;
+ // align-content: center;
 
 
 }
@@ -59,5 +61,7 @@
  // height:100vh;
  padding:2rem 0;
  background-color:rgb(209, 219, 205);
+
+
 
 }
