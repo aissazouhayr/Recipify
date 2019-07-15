@@ -226,7 +226,7 @@ html{
 }
 //SEARCH RSULTS ON THE LEST SIDE
 .results-list{
-
+    list-style: none;
 
    &__item{
    
@@ -331,8 +331,8 @@ html{
     position: relative;
     &__img{
      width:70%;
-     height:70%;
-     background-size: cover;
+     height:100%;
+    // background-size: cover;
      margin: 0 auto;
   
     position: absolute;
@@ -404,7 +404,7 @@ html{
     }
     &__ingredients{
       
-       // padding: 0 15rem;
+        overflow: scroll;
     }
 }
 
@@ -412,39 +412,64 @@ html{
 //LIKES View  ON THE RIGHT SIDE
 .likes-item{
     display: flex;
-  //  justify-content: space-evenly;
-   // align-content: center;
-   padding:0rem 4rem;
+  
     align-items: center;
-    background-color: white;
+     
+   padding:0.5rem 4rem;
+    align-items: center;
+   // background-color: white;
     margin-bottom: 1px;
     &__link{
         font-size: 1.8rem;
         font-weight: 200;
         text-decoration: none;
         margin-right: 3px;
-        color:rgb(37, 37, 235);
+        color:rgb(6, 6, 43);
         //text-transform: uppercase;
-        padding: .5rem;
+       // padding: .5rem;
        
       
     }
     &__link:hover{
         //background-color: grey;
-    
-        border-bottom: 1px dashed rgb(245, 8, 8);
+        border-bottom: 2px dashed white;
     }
     &__trash{
         width:1.7rem;
         height:1.7rem;
-       // fill:white;
+        fill:rgb(209, 219, 205);
      
     }
     &__heart{
         width:2rem;
         height:2rem;
         fill:rgba(33, 180, 33, 0.877);
+        margin-right: .7rem;
        
+       
+    }
+ 
+    &__trash:hover{
+        fill:rgb(199, 14, 14);
+    }
+    &__icons{
+      
+        padding: .8rem 0;
     }
    
 }
+.likes-item:hover{
+    background-color: black;
+    color: white;
+    
+}
+.likes-item:hover .likes-item__link{
+   // background-color: white;
+    color: white;
+    
+}
+.likes-item:hover .likes-item__heart{
+    // background-color: white;
+     fill: black;
+     
+ }

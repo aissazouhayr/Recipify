@@ -27,7 +27,8 @@ export const DisplayLikes = (title,id)=>{
    DomStrings["likes"].insertAdjacentHTML("beforeend",markup);
 
 }
-
-export const clearLike= ()=>{
-    
+// clear the recipe from the likes panel
+export const clearLike= (e)=>{
+  const div =e.target.closest(".likes-item");
+  div.parentNode.removeChild(div);
 }

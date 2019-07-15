@@ -15,7 +15,7 @@ export const DomStrings = {
     "likes":document.querySelector(".likes"),
     "likes-item__link":document.querySelector(".likes-item__link"),
     "likes-item__trash":document.querySelector(".likes-item__trash"),
-
+    "likes-item":document.querySelector(".likes-item__trash"),
 }
 
 

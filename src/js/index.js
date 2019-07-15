@@ -112,7 +112,7 @@ DomStrings["description-icons__icon--trash"].addEventListener('click',RecipeView
 // display  a recipe title  in likes panel when heart liked
 DomStrings["description-icons__icon--like"].addEventListener('click',likesController);
 // remove  a recipe title  in likes panel when trash liked
-DomStrings["likes-item__trash"].addEventListener('click',);
+DomStrings["likes"].addEventListener('click',likesView.clearLike);
 }
 
 // intialse the app

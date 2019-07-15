@@ -9,7 +9,7 @@
 .container{
   width:100vw;
   height:50vh ;
-
+ 
 
 }
 .search-section{
@@ -27,7 +27,7 @@
 }
 .content{
   width:90vw;
-  height:80vh ;
+  //height:80vh ;
   margin: 0 auto;
  //background-color: yellow;  
  
@@ -49,12 +49,13 @@
   padding:0 2rem;
   display: grid;
   grid-auto-columns: minmax(min-content,90rem);
-  grid-auto-rows: 5rem minmax(40rem,min-content) minmax(20rem,min-content) min-content ;
+ // grid-auto-rows: 5rem minmax(40rem,min-content) minmax(20rem,min-content) min-content ;
+  grid-auto-rows: 5rem minmax(40rem,min-content) min-content min-content ;
   //grid-gap: .5rem;
   justify-content: center;
 
  // align-content: center;
-
+  overflow: scroll;
 
 }
 .likes{
